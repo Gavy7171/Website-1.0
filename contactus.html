@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:wght@400&display=swap">
+    <!-- Bootstrap CSS v5.3.2 -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+        crossorigin="anonymous"
+    />
+    <!-- Bootstrap Icons -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+        rel="stylesheet"
+    />
+    <style>
+        body {
+            background-color: #000; /* Black background */
+            color: #ffcc00; /* Yellow text */
+            font-family: 'Roboto', sans-serif; /* Apply Roboto font to body text */
+            overflow-x: hidden;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Poppins', sans-serif; /* Apply Poppins font to headings */
+        }
+        .navbar {
+            background-color: #ffcc00; /* Yellow navbar */
+        }
+        .navbar-nav .nav-link {
+            color: #000;
+        }
+        .navbar-toggler-icon {
+            background-color: #000; /* Black toggle icon */
+        }
+        .search-bar {
+            background-color: #333; /* Dark grey search bar */
+            border: none;
+            color: #fff;
+        }
+        .search-bar::placeholder {
+            color: #fff; /* Placeholder text color */
+        }
+        .footer-icons i {
+            font-size: 28px;
+            margin: 0 15px;
+            color: #ffcc00;
+            transition: transform 0.3s;
+        }
+        .footer-icons i:hover {
+            transform: scale(1.2);
+        }
+        .header-logo {
+            width: 120px;
+            height: 120px;
+        }
+        .contact-form {
+            max-width: 600px;
+            margin: 50px auto;
+            background-color: #1a1a1a;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+        .contact-form input,
+        .contact-form textarea {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            margin-bottom: 15px;
+            padding: 10px;
+            border-radius: 5px;
+            width: 100%;
+        }
+        .contact-form input::placeholder,
+        .contact-form textarea::placeholder {
+            color: #bbb;
+        }
+        .contact-form button {
+            background-color: #ffcc00;
+            color: #000;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .contact-form button:hover {
+            background-color: #e6b800;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="https://parspng.com/wp-content/uploads/2023/01/dogpng.parspng.com_.png" alt="Pet Paradise" class="header-logo d-inline-block align-text-top" />
+                Pet Paradise
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Shop.html">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="About us.html">About Us</a>
+                    </li>
+                </ul>
+                <form class="d-flex ms-3">
+                    <input class="form-control me-2 search-bar" type="search" placeholder="Search" aria-label="Search" />
+                </form>
+            </div>
+        </div>
+    </nav>
+    
+    <section id="contact-us" class="text-center">
+        <h2>Contact Us</h2>
+        <p>If you have any questions, please feel free to reach out to us. We are here to help you!</p>
+        
+        <div class="container">
+            <form class="contact-form" action="mailto:your-email@example.com" method="post" enctype="text/plain">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-icons text-center">
+            <i class="bi bi-facebook"></i>
+            <i class="bi bi-twitter"></i>
+            <i class="bi bi-instagram"></i>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-tz1jIrnJsw4d6K2zSH0fNnMTmXEW9JJ2wEPjq4uvb8J+NuERmWBWf4GhIZ3yIoM" crossorigin="anonymous"></script>
+</body>
+</html>
+

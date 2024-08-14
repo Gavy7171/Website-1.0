@@ -1,0 +1,322 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Pet Paradise</title>
+    <!-- Bootstrap CSS v5.3.2 -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+        crossorigin="anonymous"
+    />
+    <!-- Bootstrap Icons -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+        rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:wght@400&display=swap">
+    <style>
+        body {
+            background-color: #000; /* Black background */
+            color: #fff; /* White text */
+            font-family: 'Roboto', sans-serif; /* Apply Roboto font to body text */
+            overflow-x: hidden;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Poppins', sans-serif; /* Apply Poppins font to headings */
+        }
+        .navbar {
+            background-color: #ffcc00; /* Yellow navbar */
+        }
+        .navbar-nav .nav-link {
+            color: #000;
+        }
+        .navbar-toggler-icon {
+            background-color: #000; /* Black toggle icon */
+        }
+        .search-bar {
+            background-color: #333; /* Dark grey search bar */
+            border: none;
+            color: #fff;
+        }
+        .search-bar::placeholder {
+            color: #fff; /* Placeholder text color */
+        }
+        .featured-products,
+        .pet-care {
+            margin: 40px 0;
+            .card {
+    border: none;
+    background-color: #1a1a1a; /* Dark background for cards */
+    color: #fff;
+    opacity: 0;
+    transform: translateY(50px);
+    animation: floatIn 1.5s ease-out forwards;
+    font-family: 'Roboto', sans-serif; /* Apply Roboto font to card text */
+    height: 100%; /* Ensures cards are the same height */
+}
+
+.card img {
+    border-bottom: 2px solid #ffcc00; /* Yellow bottom border on images */
+    height: 250px; /* Fixed height for images */
+    object-fit: cover; /* Ensures images cover the area without stretching */
+}
+
+.card-body {
+    background-color: #333; /* Dark grey background for card body */
+    height: 100%; /* Ensures card body stretches to fill the card */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Evenly distributes card content */
+}
+
+.card-title, .card-text, .btn-dark {
+    margin-bottom: 10px; /* Adds space between content elements */
+}
+
+        }
+        .btn-dark {
+            background-color: #ffcc00; /* Yellow background for buttons */
+            color: #000; /* Black text */
+            border: none;
+            font-family: 'Roboto', sans-serif; /* Apply Roboto font to buttons */
+        }
+        .btn-dark:hover {
+            background-color: #e6b800; /* Slightly darker yellow on hover */
+        }
+        .footer-icons i {
+            font-size: 28px;
+            margin: 0 15px;
+            color: #ffcc00;
+            transition: transform 0.3s;
+        }
+        .footer-icons i:hover {
+            transform: scale(1.2);
+        }
+        .header-logo {
+            width: 120px;
+            height: 120px;
+        }
+        header {
+            padding: 60px 0;
+            text-align: center;
+            opacity: 0;
+            transform: translateY(-20px);
+            animation: fadeInDown 2s ease-out forwards 0.5s;
+            position: relative;
+            background-color: #1a1a1a; /* Dark grey background for header */
+            border-bottom: 4px solid #ffcc00; /* Yellow border at the bottom of the header */
+            color: #ffcc00; /* Yellow text in the header */
+            font-family: 'Poppins', sans-serif; /* Apply Poppins font to header text */
+        }
+        .animated-dog {
+            position: absolute;
+            top: -60px;
+            right: 10px;
+            width: 150px;
+            height: 150px;
+            background-image: url('https://i.pinimg.com/originals/07/b2/40/07b240561cb656aec289df602e603bee.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            animation: moveDog 5s linear infinite;
+        }
+        @keyframes fadeIn {
+            15% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        @keyframes floatIn {
+            10% {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @keyframes fadeInDown {
+            0% {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            100% {
+                opacity: 6;
+                transform: translateY(0);
+            }
+        }
+        @keyframes moveDog {
+            0% {
+                transform: translateX(0);
+            }
+            50% {
+                transform: translateX(-20px) translateY(10px);
+            }
+            100% {
+                transform: translateX(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Your HTML content here -->
+</body>
+</html>
+
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="https://parspng.com/wp-content/uploads/2023/01/dogpng.parspng.com_.png" alt="Pet Paradise" class="header-logo d-inline-block align-text-top" />
+                Pet Paradise
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contactus.html">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Shop.html">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="About us.html">About Us</a>
+                    </li>
+                </ul>
+                <form class="d-flex ms-3">
+                    <input class="form-control me-2 search-bar" type="search" placeholder="Search" aria-label="Search" />
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <header>
+        <h1>Welcome to Pet Paradise, your one-stop shop for all your pet's needs.</h1>
+        <p class="lead bg-dark text-yellow p-3">
+            Our mission is to provide high-quality products that ensure the health and happiness of your pets. We believe every pet deserves the best care possible.
+        </p>
+        <div class="animated-dog"></div>
+    </header>
+
+    <section class="featured-products text-center">
+        <h2>Featured Products</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://petfoodclub.co.nz/wp-content/uploads/2019/11/Hills-Science-Diet-Adult.png" class="card-img-top" alt="Organic Dog Food" />
+                    <div class="card-body">
+                        <h5 class="card-title">Organic Dog Food</h5>
+                        <p class="card-text">$29</p>
+                        <p>Nutritious and natural food for your furry friend</p>
+                        <button class="btn btn-dark">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://www.thewarehouse.co.nz/dw/image/v2/BDMG_PRD/on/demandware.static/-/Sites-twl-master-catalog/default/dwa51b4fa2/images/hi-res/71/3A/R2747972_30.jpg?sw=765&sh=765" class="card-img-top" alt="Cat Scratching Post" />
+                    <div class="card-body">
+                        <h5 class="card-title">Cat Scratching Post</h5>
+                        <p class="card-text">$49</p>
+                        <p>Durable and fun for your cat</p>
+                        <button class="btn btn-dark">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXcecCtzchGMJaBxbwmbF2yAXgRFX6k4TGVA&s" class="card-img-top" alt="Bird Feeder" />
+                    <div class="card-body">
+                        <h5 class="card-title">Bird Feeder</h5>
+                        <p class="card-text">$99</p>
+                        <p>Spacious and stylish for your bird</p>
+                        <button class="btn btn-dark">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+        <section class="pet-care text-center">
+            <h2>Pet Care</h2>
+            <div class="row align-items-center">
+                <div class="col
+
+                <div class="col-md-4">
+                        <div class="card">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToUzXImsyOgwZSOJ__coUTpD-Kj0DnNrbZUw&s" class="card-img-top" alt="How to Train Your Puppy" />
+                            <div class="card-body">
+                                <h5 class="card-title">How to Train Your Puppy - Tips for new pet owners.</h5>
+                                <p class="card-text">$50 / month</p>
+                                <button class="btn btn-dark">Subscribe</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 text-md-start text-center">
+                        <h5 class="card-title">How to Train Your Puppy - Tips for new pet owners.</h5>
+                        <p class="card-text">$50 / month</p>
+                        <button class="btn btn-dark">Subscribe</button>
+                    </div>
+                </div>
+                <div class="row align-items-center">
+                    <div class="col-md-6 order-md-2">
+                        <div class="card">
+                            <img src="https://th-thumbnailer.cdn-si-edu.com/ii_ZQzqzZgBKT6z9DVNhfPhZe5g=/fit-in/1600x0/filters:focal(1061x707:1062x708)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/55/95/55958815-3a8a-4032-ac7a-ff8c8ec8898a/gettyimages-1067956982.jpg" class="card-img-top" alt="Keeping Your Cat Healthy" />
+                            <div class="card-body">
+                                <h5 class="card-title">Keeping Your Cat Healthy - Essential care tips.</h5>
+                                <p class="card-text">$50 / month</p>
+                                <button class="btn btn-dark">Subscribe</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 text-md-start text-center">
+                        <h5 class="card-title">Keeping Your Cat Healthy - Essential care tips.</h5>
+                        <p class="card-text">$50 / month</p>
+                        <button class="btn btn-dark">Subscribe</button>
+                    </div>
+                </div>
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <div class="card">
+                            <img src="https://www.localvet.com.au/VetplusCBMaster/Images/BirdCare_birdsenjoyable.jpg" class="card-img-top" alt="Bird Care Basics" />
+                            <div class="card-body">
+                                <h5 class="card-title">Bird Care Basics - What Every Bird Owner Should Know.</h5>
+                                <p class="card-text">$50 / month</p>
+                                <button class="btn btn-dark">Subscribe</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 text-md-start text-center">
+                        <h5 class="card-title">Bird Care Basics - What Every Bird Owner Should Know.</h5>
+                        <p class="card-text">$50 / month</p>
+                        <button class="btn btn-dark">Subscribe</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="text-center my-4">
+            <p>Follow us on:</p>
+            <div class="footer-icons">
+                <a href="https://twitter.com" aria-label="Twitter" target="_blank"><i class="bi bi-twitter"></i></a>
+                <a href="https://instagram.com" aria-label="Instagram" target="_blank"><i class="bi bi-instagram"></i></a>
+                <a href="https://facebook.com" aria-label="Facebook" target="_blank"><i class="bi bi-facebook"></i></a>
+            </div>
+            <p>@PETPARADISE</p>
+        </footer>
+
+        <!-- Bootstrap JavaScript Libraries -->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    </body>
+</html>

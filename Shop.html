@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:wght@400&display=swap">
+    <!-- Bootstrap CSS v5.3.2 -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+        crossorigin="anonymous"
+    />
+    <!-- Bootstrap Icons -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+        rel="stylesheet"
+    />
+    <style>
+        body {
+            background-color: #000; /* Black background */
+            color: #ffcc00; /* Yellow text */
+            font-family: 'Roboto', sans-serif; /* Apply Roboto font to body text */
+            overflow-x: hidden;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Poppins', sans-serif; /* Apply Poppins font to headings */
+            margin-bottom: 20px; /* Consistent spacing below headers */
+        }
+        h1 {
+            font-size: 32px; /* Smaller font size for h1 */
+        }
+        h2 {
+            font-size: 28px; /* Smaller font size for h2 */
+        }
+        .navbar {
+            background-color: #ffcc00; /* Yellow navbar */
+            padding: 10px 0;
+        }
+        .navbar-brand {
+            font-size: 24px; /* Smaller logo text */
+        }
+        .header-logo {
+            width: 80px; /* Smaller logo size */
+            height: auto;
+        }
+        .navbar-nav .nav-link {
+            color: #000;
+            font-size: 18px;
+        }
+        .navbar-toggler-icon {
+            background-color: #000; /* Black toggle icon */
+        }
+        .search-bar {
+            background-color: #333; /* Dark grey search bar */
+            border: none;
+            color: #fff;
+        }
+        .search-bar::placeholder {
+            color: #fff; /* Placeholder text color */
+        }
+        .video-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: -1;
+            overflow: hidden;
+            object-fit: cover;
+            filter: brightness(0.5); /* Optional: Darken the video for better contrast */
+        }
+        .product-card {
+            background-color: #1a1a1a; /* Dark grey background for product cards */
+            border: 1px solid #ffcc00; /* Yellow border */
+            border-radius: 5px;
+            padding: 20px;
+            margin-bottom: 20px;
+            text-align: center;
+            transition: transform 0.3s ease;
+            height: 450px; /* Consistent card height */
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .product-card:hover {
+            transform: scale(1.05);
+        }
+        .product-card img {
+            width: 100%;
+            height: 200px; /* Consistent image height */
+            object-fit: contain; /* Ensure the image fits within the specified dimensions */
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+        .product-card h3 {
+            font-size: 22px; /* Smaller product title */
+            margin-bottom: 10px;
+        }
+        .product-card p {
+            font-size: 18px; /* Consistent text size */
+            margin-bottom: 15px;
+        }
+        .product-card .btn {
+            background-color: #ffcc00;
+            color: #000;
+            font-size: 18px;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            margin-top: auto; /* Push the button to the bottom */
+        }
+        .footer-icons i {
+            font-size: 28px;
+            margin: 0 15px;
+            color: #ffcc00;
+            transition: transform 0.3s;
+        }
+        .footer-icons i:hover {
+            transform: scale(1.2);
+        }
+        footer {
+            background-color: #1a1a1a;
+            padding: 20px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    
+    <video autoplay muted loop class="video-background">
+        <source src="video/MicrosoftTeams-video (1).mp4" type="video/mp4">
+
+      
+    </video>
+
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="https://parspng.com/wp-content/uploads/2023/01/dogpng.parspng.com_.png" alt="Pet Paradise" class="header-logo d-inline-block align-text-top" />
+                Pet Paradise
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contactus.html">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Shop.html">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="About us.html">About Us</a>
+                    </li>
+                </ul>
+                <form class="d-flex ms-3">
+                    <input class="form-control me-2 search-bar" type="search" placeholder="Search" aria-label="Search" />
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <section class="shop-section container mt-5">
+        <h1 class="text-center">Our Products</h1>
+        <div class="row">
+            <!-- Product 1 -->
+            <div class="col-md-4">
+                <div class="product-card">
+                    <img src="https://petfoodclub.co.nz/wp-content/uploads/2019/11/Hills-Science-Diet-Adult.png" alt="Organic Dog Food">
+                    <h3>Organic Dog Food</h3>
+                    <p>Keep Your Pet In Shape</p>
+                    <button class="btn">Buy Now</button>
+                </div>
+            </div>
+            <!-- Product 2 -->
+            <div class="col-md-4">
+                <div class="product-card">
+                    <img src="https://www.thewarehouse.co.nz/dw/image/v2/BDMG_PRD/on/demandware.static/-/Sites-twl-master-catalog/default/dwa51b4fa2/images/hi-res/71/3A/R2747972_30.jpg?sw=765&sh=765" alt="Cat Scratching Post">
+                    <h3>Cat Scratching Post</h3>
+                    <p>Keep Your Cat Busy</p>
+                    <button class="btn">Buy Now</button>
+                </div>
+            </div>
+            <!-- Product 3 -->
+            <div class="col-md-4">
+                <div class="product-card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXcecCtzchGMJaBxbwmbF2yAXgRFX6k4TGVA&s" alt="Bird Feeder">
+                    <h3>Bird Feeder</h3>
+                    <p>Make It Easy To Feed Your Bird</p>
+                    <button class="btn">Buy Now</button>
+                </div>
+            </div>
+            <!-- Product 4 -->
+            <div class="col-md-4">
+                <div class="product-card">
+                    <img src="https://www.ambientlounge.co.nz/images/detailed/7/Medium_Premium_Indoor_or_Outdoor_Dog_Bed_Cappuccino_1.jpg" alt="Pet Bed">
+                    <h3>Pet Bed</h3>
+                    <p>Make Your Pet Comfy With This Pet Bed</p>
+                    <button class="btn">Buy Now</button>
+                </div>
+            </div>
+            <!-- Product 5 -->
+            <div class="col-md-4">
+                <div class="product-card">
+                    <img src="https://content2.onbuy.com/product/d2b5f6162e3549bbbd8e3ec1bfb7695c-l908713-20784293.jpg" alt="Dog Chew Toy">
+                    <h3>Dog Chew Toy</h3>
+                    <p>Keep Your Pet Entertained</p>
+                    <button class="btn">Buy Now</button>
+                </div>
+            </div>
+            <!-- Product 6 -->
+            <div class="col-md-4">
+                <div class="product-card">
+                    <img src="https://shop.shields.com/images/thumbs/002/0025412_kong-explore-crates-medium_250.png" alt="Dog Crate">
+                    <h3>Dog Crate</h3>
+                    <p>Make Traveling Easy With This Dog Crate</p>
+                    <button class="btn">Buy Now</button>
+                </div>
+            </div>
+            <!-- Product 7 -->
+            <div class="col-md-4">
+                <div class="product-card">
+                    <img src="https://cdn.shopify.com/s/files/1/0105/6956/1599/products/IMG_1546_800x.png?v=1683570093" alt="Dog Leash">
+                    <h3>Dog Leash</h3>
+                    <p>Stylish and Durable</p>
+                    <button class="btn">Buy Now</button>
+                </div>
+            </div>
+            <!-- Product 8 -->
+            <div class="col-md-4">
+                <div class="product-card">
+                    <img src="https://cdn.pixabay.com/photo/2019/03/15/14/00/fish-tank-4052576_1280.png" alt="Fish Tank">
+                    <h3>Fish Tank</h3>
+                    <p>Perfect for Your Aquatic Friends</p>
+                    <button class="btn">Buy Now</button>
+                </div>
+            </div>
+            <!-- Product 9 -->
+            <div class="col-md-4">
+                <div class="product-card">
+                    <img src="https://cdn.shopify.com/s/files/1/2972/1610/products/Franklin-buddy-ball-L.jpg?v=1604411452" alt="Cat Ball Toy">
+                    <h3>Cat Ball Toy</h3>
+                    <p>Keep Your Cat Active</p>
+                    <button class="btn">Buy Now</button>
+                </div>
+            </div>
+            <!-- Product 10 -->
+            <div class="col-md-4">
+                <div class="product-card">
+                    <img src="https://cdn.pixabay.com/photo/2017/04/03/20/45/rabbit-2193240_1280.jpg" alt="Rabbit Hutch">
+                    <h3>Rabbit Hutch</h3>
+                    <p>Spacious and Comfortable</p>
+                    <button class="btn">Buy Now</button>
+                </div>
+            </div>
+            <!-- Product 11 -->
+            <div class="col-md-4">
+                <div class="product-card">
+                    <img src="https://www.thewarehouse.co.nz/dw/image/v2/BDMG_PRD/on/demandware.static/-/Sites-twl-master-catalog/default/dwe49f2b82/images/hi-res/74/2B/R2747985_30.jpg?sw=765&sh=765" alt="Pet Carrier">
+                    <h3>Pet Carrier</h3>
+                    <p>Travel in Comfort</p>
+                    <button class="btn">Buy Now</button>
+                </div>
+            </div>
+            <!-- Product 12 -->
+            <div class="col-md-4">
+                <div class="product-card">
+                    <img src="https://cdn.pixabay.com/photo/2018/06/06/19/33/snake-3454268_1280.jpg" alt="Reptile Habitat">
+                    <h3>Reptile Habitat</h3>
+                    <p>Create a Cozy Environment</p>
+                    <button class="btn">Buy Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="mt-5">
+        <div class="footer-icons">
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-twitter"></i></a>
+            <a href="#"><i class="bi bi-instagram"></i></a>
+        </div>
+        <p>&copy; 2023 Pet Paradise. All rights reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS v5.3.2 -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz4fnFO9gybBogGzY3AKI8HKw6T6pLQapAnfFZjzOf+bIh5aZcZe9Bv1Ws" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-q4WYR5FfgrKOIQUU4ptl6pVCrqCKCC2Z6J7/JIBKT/0VV0CBiZXo8nHUp7N9ZOnx" crossorigin="anonymous"></script>
+</body>
+</html>
